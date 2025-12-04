@@ -4,15 +4,15 @@ export default function PhilosophySection() {
     const steps = [
         {
             title: "Research",
-            description: "We observe the unseen. Gathering intelligence from the shadows to inform design decisions that others miss."
+            description: "We uncover what others overlook. Through deep analysis and quiet observation, we extract insights from the unseen—guiding decisions with precision and intention"
         },
         {
             title: "Create",
-            description: "Rapid prototyping in the dark. We build, break, and rebuild until the solution emerges from the void."
+            description: "We prototype with purpose. From rough sketches to refined systems, we build, break, and rebuild until clarity emerges and the solution reveals itself."
         },
         {
             title: "Design",
-            description: "Every pixel narrates a chapter. We don't just build interfaces; we construct narratives that users inhabit."
+            description: "Every pixel carries meaning. We craft experiences that feel alive—interfaces shaped as narratives, not just screens, where users move with intuition and purpose"
         }
     ];
 

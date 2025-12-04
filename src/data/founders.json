@@ -1,22 +1,22 @@
 [
     {
         "id": "founder-1",
-        "name": "CIPHER",
-        "role": "Creative Director",
-        "codename": "CIPHER",
+        "name": "KHIZAR",
+        "role": "FOUNDER",
+        "codename": "KHIZAR",
         "philosophy": "We craft worlds that hide in plain sight.",
         "description": "Specializing in immersive digital experiences and narrative-driven design. Transforming abstract concepts into tangible digital realities.",
-        "imageUrl": "/founder.png",
+        "imageUrl": "/platform/founder1.jpg",
         "portfolioUrl": "https://portfolio-founder-1.com"
     },
     {
         "id": "founder-2",
-        "name": "ARCHIVIST",
-        "role": "Technical Lead",
-        "codename": "ARCHIVIST",
+        "name": "AMEIN",
+        "role": "FOUNDER",
+        "codename": "AMEIN",
         "philosophy": "Code is the architecture of the shadows.",
         "description": "Architecting robust systems and scalable infrastructure. Building the unseen foundations that power the digital experience.",
-        "imageUrl": "/founder.png",
+        "imageUrl": "/platform/founder2.jpg",
         "portfolioUrl": "https://portfolio-founder-2.com"
     }
 ]
