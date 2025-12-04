@@ -6,7 +6,7 @@
                 "codename": "CIPHER",
                 "philosophy": "We craft worlds that hide in plain sight.",
                 "description": "Specializing in immersive digital experiences and narrative-driven design. Transforming abstract concepts into tangible digital realities.",
-                "imageUrl": "/founder.png",
+                "imageUrl": "/founder1.jpg",
                 "portfolioUrl": "/portfolio/cipher/index.html"
         },
         {
@@ -16,7 +16,7 @@
                 "codename": "ARCHIVIST",
                 "philosophy": "Code is the architecture of the shadows.",
                 "description": "Architecting robust systems and scalable infrastructure. Building the unseen foundations that power the digital experience.",
-                "imageUrl": "/founder.png",
+                "imageUrl": "/founder2.jpg",
                 "portfolioUrl": "/portfolio/archivist/index.html"
         }
 ]
