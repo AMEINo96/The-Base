@@ -1,7 +1,7 @@
 import { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, Github, Linkedin, Instagram } from 'lucide-react';
-import { useNavigate } from 'react-router-dom';
+
 import appsData from '../data/apps.json';
 import foundersData from '../data/founders.json';
 import type { AppConfig, Founder } from '../types';
@@ -14,7 +14,7 @@ import PhilosophySection from '../components/PhilosophySection';
 function Home() {
     const [selectedApp, setSelectedApp] = useState<AppConfig | null>(null);
     const [filter, setFilter] = useState<string>('All');
-    const navigate = useNavigate();
+
 
     const dossierRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
