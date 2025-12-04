@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Clicker</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #222;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            background: #ff0055;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.1s;
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <h1>Local Demo Game</h1>
+    <p>This game is hosted locally inside your platform!</p>
+    <h2 id="score">Score: 0</h2>
+    <button onclick="increment()">Click Me!</button>
+
+    <script>
+        let score = 0;
+        function increment() {
+            score++;
+            document.getElementById('score').innerText = 'Score: ' + score;
+        }
+    </script>
+</body>
+</html>
