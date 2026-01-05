@@ -5,7 +5,7 @@
                 "role": "FOUNDER",
                 "codename": "SHADOW",
                 "philosophy": "The right prompt is the bridge between human intent and machine intelligence.",
-                "description": "AI Prompt Engineer and AI Engineering student at NUST, focused on building accurate, efficient and generative AI solutions. ",
+                "description": "Prompt Engineer and AI/ML Engineering student at NUST, focused on building accurate, efficient and generative AI solutions. ",
                 "imageUrl": "/platform/founder.png",
                 "portfolioUrl": "/platform/portfolio/cipher/index.html"
         },
@@ -14,8 +14,8 @@
                 "name": "AMEIN",
                 "role": "FOUNDER",
                 "codename": "ARCHIVIST",
-                "philosophy": "Code is the architecture of the shadows.",
-                "description": "Architecting robust systems and scalable infrastructure. Building the unseen foundations that power the digital experience.",
+                "philosophy": "Building the unseen foundations that power the digital experience.",
+                "description": "AI Prompt Engineer and AI Engineering student at NUST, passionate about creating robust and scalable AI programs",
                 "imageUrl": "/platform/founder.png",
                 "portfolioUrl": "/platform/portfolio/archivist/index.html"
         }
