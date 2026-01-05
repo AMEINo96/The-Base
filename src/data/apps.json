@@ -3,13 +3,13 @@
     "id": "2",
     "title": "Skill Match",
     "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/platform/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
     "link": "https://skill-match-website.web.app/",
     "openIn": "new-tab",
     "tags": [
-      "React",
+      "Amein",
       "Firebase",
-      "Social"
+      "React"
     ],
     "category": "Webapp"
   },
@@ -21,8 +21,8 @@
     "link": "https://cryptovision-five.vercel.app/",
     "openIn": "new-tab",
     "tags": [
+      "Amein",
       "React",
-      "Crypto",
       "API"
     ],
     "category": "Webapp"

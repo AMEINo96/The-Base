@@ -1,22 +1,22 @@
 [
         {
                 "id": "founder-1",
-                "name": "CIPHER",
-                "role": "Creative Director",
-                "codename": "CIPHER",
-                "philosophy": "We craft worlds that hide in plain sight.",
-                "description": "Specializing in immersive digital experiences and narrative-driven design. Transforming abstract concepts into tangible digital realities.",
-                "imageUrl": "/founder1.jpg",
-                "portfolioUrl": "/portfolio/cipher/index.html"
+                "name": "KHIZAR",
+                "role": "FOUNDER",
+                "codename": "SHADOW",
+                "philosophy": "The right prompt is the bridge between human intent and machine intelligence.",
+                "description": "AI Prompt Engineer and AI Engineering student at NUST, focused on building accurate, efficient and generative AI solutions. ",
+                "imageUrl": "/platform/founder.png",
+                "portfolioUrl": "/platform/portfolio/cipher/index.html"
         },
         {
                 "id": "founder-2",
-                "name": "ARCHIVIST",
-                "role": "Technical Lead",
+                "name": "AMEIN",
+                "role": "FOUNDER",
                 "codename": "ARCHIVIST",
                 "philosophy": "Code is the architecture of the shadows.",
                 "description": "Architecting robust systems and scalable infrastructure. Building the unseen foundations that power the digital experience.",
-                "imageUrl": "/founder2.jpg",
-                "portfolioUrl": "/portfolio/archivist/index.html"
+                "imageUrl": "/platform/founder.png",
+                "portfolioUrl": "/platform/portfolio/archivist/index.html"
         }
 ]
