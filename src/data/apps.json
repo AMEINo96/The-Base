@@ -56,9 +56,9 @@
     ],
     "category": "Graphic Design",
     "images": [
-      "/The-Base/posterex.png",
-      "/The-Base/thumbnailex.png",
-      "/The-Base/bookcoverex.png"
+      "public/QYU AR Built for the Uncommon Poster.png",
+      "public/QYU AR Built for the Uncommon Thumbnail.png",
+      "public/QYU AR Built for the Uncommon Book Cover.png"
     ]
   },
   {
