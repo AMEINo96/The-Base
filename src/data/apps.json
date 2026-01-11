@@ -11,7 +11,7 @@
       "Firebase",
       "React"
     ],
-    "category": "Webapp"
+    "category": "Web Development"
   },
   {
     "id": "5",
@@ -25,6 +25,54 @@
       "React",
       "API"
     ],
-    "category": "Webapp"
+    "category": "AI/ML"
+  },
+  {
+    "id": "1",
+    "title": "Logo Design",
+    "description": "Connecting students with the perfect teammates for hackathons.",
+    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "link": "/portfolio/project/1",
+    "openIn": "new-tab",
+    "tags": [
+      "Portfolio"
+    ],
+    "category": "Graphic Design"
+  },
+  {
+    "id": "3",
+    "title": "Poster/Ads Design",
+    "description": "Connecting students with the perfect teammates for hackathons.",
+    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "link": "/portfolio/project/3",
+    "openIn": "new-tab",
+    "tags": [
+      "Portfolio"
+    ],
+    "category": "Graphic Design"
+  },
+  {
+    "id": "4",
+    "title": "Thumbnail Design",
+    "description": "Connecting students with the perfect teammates for hackathons.",
+    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "link": "/portfolio/project/4",
+    "openIn": "new-tab",
+    "tags": [
+      "Portfolio"
+    ],
+    "category": "Graphic Design"
+  },
+  {
+    "id": "6",
+    "title": "Book Cover Design",
+    "description": "Connecting students with the perfect teammates for hackathons.",
+    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "link": "/portfolio/project/6",
+    "openIn": "new-tab",
+    "tags": [
+      "Portfolio"
+    ],
+    "category": "Graphic Design"
   }
 ]

@@ -3,20 +3,20 @@
                 "id": "founder-1",
                 "name": "KHIZAR",
                 "role": "FOUNDER",
-                "codename": "SHADOW",
-                "philosophy": "The right prompt is the bridge between human intent and machine intelligence.",
-                "description": "Prompt Engineer and AI/ML Engineering student at NUST, focused on building accurate, efficient and generative AI solutions. ",
-                "imageUrl": "/platform/founder.png",
+                "codename": "KHIZAR",
+                "philosophy": "Visualizing the unseen, engineering the future.",
+                "description": "Specializing in Graphic Design, Frontend Development, and AI/ML. Crafting intuitive interfaces and intelligent systems.",
+                "imageUrl": "/the-base/founder1.jpg",
                 "portfolioUrl": "/platform/portfolio/cipher/index.html"
         },
         {
                 "id": "founder-2",
                 "name": "AMEIN",
                 "role": "FOUNDER",
-                "codename": "ARCHIVIST",
-                "philosophy": "Building the unseen foundations that power the digital experience.",
-                "description": "AI Prompt Engineer and AI Engineering student at NUST, passionate about creating robust and scalable AI programs",
-                "imageUrl": "/platform/founder.png",
+                "codename": "AMEIN",
+                "philosophy": "Architecting robust systems, automating the complex.",
+                "description": "Focusing on Backend Architecture, Automation, and AI/ML. Building the scalable engines that power digital innovation.",
+                "imageUrl": "/the-base/founder2.jpg",
                 "portfolioUrl": "/platform/portfolio/archivist/index.html"
         }
 ]

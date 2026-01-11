@@ -9,12 +9,12 @@ import ParticleBackground from '../components/ParticleBackground';
 import FounderCard from '../components/FounderCard';
 import ProjectCard from '../components/ProjectCard';
 
+import { useNavigate } from 'react-router-dom';
 import PhilosophySection from '../components/PhilosophySection';
 
 function Home() {
     const [selectedApp, setSelectedApp] = useState<AppConfig | null>(null);
-    const [filter, setFilter] = useState<string>('All');
-
+    const navigate = useNavigate();
 
     const dossierRef = useRef<HTMLDivElement>(null);
     const projectsRef = useRef<HTMLDivElement>(null);
@@ -22,15 +22,11 @@ function Home() {
     const apps: AppConfig[] = appsData as AppConfig[];
     const founders: Founder[] = foundersData as Founder[];
 
-    const filteredApps = filter === 'All'
-        ? apps
-        : apps.filter(app => app.category === filter);
-
-    const filters = ['All', 'Brand', 'Webapp', 'Game', 'Experimental'];
-
     const handleAppClick = (app: AppConfig) => {
         if (app.openIn === 'modal') {
             setSelectedApp(app);
+        } else if (app.link.startsWith('/')) {
+            navigate(app.link);
         } else {
             window.open(app.link, '_blank');
         }
@@ -81,7 +77,8 @@ function Home() {
                         transition={{ delay: 0.4 }}
                         className="text-lg md:text-2xl text-text-muted max-w-2xl mx-auto mb-12 font-light"
                     >
-                        Two minds. A thousand shadows. <span className="text-white font-medium">We build worlds.</span>
+                        Web Development. Graphic Design. AI/ML.<br />
+                        <span className="text-white font-medium">We build the unseen.</span>
                     </motion.p>
 
                     {/* Action Buttons */}
@@ -147,52 +144,98 @@ function Home() {
                 </div>
             </section>
 
-            {/* Projects Grid Section */}
-            <section ref={projectsRef} className="relative py-32 px-8 bg-panel border-y border-white/5">
+            {/* Graphic Design Section */}
+            <section ref={projectsRef} className="relative py-24 px-8 bg-panel border-y border-white/5">
                 <div className="max-w-7xl mx-auto">
-                    <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">
-                        <motion.div
-                            initial={{ opacity: 0, x: -20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                        >
-                            <h2 className="font-display text-4xl font-bold mb-2">Signature Projects</h2>
-                            <p className="text-text-muted">Selected works from the archive.</p>
-                        </motion.div>
-
-                        {/* Filters */}
-                        <motion.div
-                            initial={{ opacity: 0, x: 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ once: true }}
-                            className="flex flex-wrap gap-2"
-                        >
-                            {filters.map((f) => (
-                                <button
-                                    key={f}
-                                    onClick={() => setFilter(f)}
-                                    className={`px-4 py-2 rounded-full text-sm font-mono transition-all ${filter === f
-                                        ? 'bg-accent text-white shadow-[0_0_15px_rgba(159,122,234,0.3)]'
-                                        : 'bg-white/5 text-text-muted hover:bg-white/10'
-                                        }`}
-                                >
-                                    {f}
-                                </button>
-                            ))}
-                        </motion.div>
-                    </div>
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="mb-12"
+                    >
+                        <h2 className="font-display text-4xl font-bold mb-2">Graphic Design Portfolio</h2>
+                        <p className="text-text-muted">Visual identities and creative direction.</p>
+                    </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-                        <AnimatePresence mode='popLayout'>
-                            {filteredApps.map((app, index) => (
+                        {apps.filter(app => app.category === 'Graphic Design').length > 0 ? (
+                            apps.filter(app => app.category === 'Graphic Design').map((app, index) => (
                                 <ProjectCard
                                     key={app.id}
                                     project={app}
                                     index={index}
                                     onClick={() => handleAppClick(app)}
                                 />
-                            ))}
-                        </AnimatePresence>
+                            ))
+                        ) : (
+                            <div className="col-span-full py-12 text-center border border-dashed border-white/10 rounded-xl bg-white/5">
+                                <p className="text-text-muted font-mono">CLASSIFIED // DECLASSIFICATION IN PROGRESS</p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+
+            {/* Web Development Section */}
+            <section className="relative py-24 px-8 bg-bg">
+                <div className="max-w-7xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="mb-12"
+                    >
+                        <h2 className="font-display text-4xl font-bold mb-2">Web Development Projects</h2>
+                        <p className="text-text-muted">Full-stack applications and digital platforms.</p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        {apps.filter(app => app.category === 'Web Development').length > 0 ? (
+                            apps.filter(app => app.category === 'Web Development').map((app, index) => (
+                                <ProjectCard
+                                    key={app.id}
+                                    project={app}
+                                    index={index}
+                                    onClick={() => handleAppClick(app)}
+                                />
+                            ))
+                        ) : (
+                            <div className="col-span-full py-12 text-center border border-dashed border-white/10 rounded-xl bg-white/5">
+                                <p className="text-text-muted font-mono">CLASSIFIED // DECLASSIFICATION IN PROGRESS</p>
+                            </div>
+                        )}
+                    </div>
+                </div>
+            </section>
+
+            {/* AI/ML Section */}
+            <section className="relative py-24 px-8 bg-panel border-y border-white/5">
+                <div className="max-w-7xl mx-auto">
+                    <motion.div
+                        initial={{ opacity: 0, x: -20 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        viewport={{ once: true }}
+                        className="mb-12"
+                    >
+                        <h2 className="font-display text-4xl font-bold mb-2">AI/ML Projects</h2>
+                        <p className="text-text-muted">Intelligent systems and predictive models.</p>
+                    </motion.div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                        {apps.filter(app => app.category === 'AI/ML').length > 0 ? (
+                            apps.filter(app => app.category === 'AI/ML').map((app, index) => (
+                                <ProjectCard
+                                    key={app.id}
+                                    project={app}
+                                    index={index}
+                                    onClick={() => handleAppClick(app)}
+                                />
+                            ))
+                        ) : (
+                            <div className="col-span-full py-12 text-center border border-dashed border-white/10 rounded-xl bg-white/5">
+                                <p className="text-text-muted font-mono">CLASSIFIED // DECLASSIFICATION IN PROGRESS</p>
+                            </div>
+                        )}
                     </div>
                 </div>
             </section>

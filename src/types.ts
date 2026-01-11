@@ -6,7 +6,8 @@ export interface AppConfig {
     link: string;
     openIn: 'modal' | 'new-tab';
     tags?: string[];
-    category?: 'Brands' | 'Webapps' | 'Games' | 'Experimental' | 'Research';
+    category?: 'Web Development' | 'Graphic Design' | 'AI/ML';
+    images?: string[];
 }
 
 export interface Founder {
@@ -18,4 +19,5 @@ export interface Founder {
     description: string;
     imageUrl: string;
     portfolioUrl: string;
+
 }
