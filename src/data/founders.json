@@ -6,8 +6,8 @@
                 "codename": "KHIZAR",
                 "philosophy": "Visualizing the unseen, engineering the future.",
                 "description": "Specializing in Graphic Design, Frontend Development, and AI/ML. Crafting intuitive interfaces and intelligent systems.",
-                "imageUrl": "/the-base/founder1.jpg",
-                "portfolioUrl": "/platform/portfolio/cipher/index.html"
+                "imageUrl": "/The-Base/founder1.jpg",
+                "portfolioUrl": "/The-Base/portfolio/cipher/index.html"
         },
         {
                 "id": "founder-2",
@@ -16,7 +16,7 @@
                 "codename": "AMEIN",
                 "philosophy": "Architecting robust systems, automating the complex.",
                 "description": "Focusing on Backend Architecture, Automation, and AI/ML. Building the scalable engines that power digital innovation.",
-                "imageUrl": "/the-base/founder2.jpg",
-                "portfolioUrl": "/platform/portfolio/archivist/index.html"
+                "imageUrl": "/The-Base/founder2.jpg",
+                "portfolioUrl": "/The-Base/portfolio/archivist/index.html"
         }
 ]

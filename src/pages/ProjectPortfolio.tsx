@@ -131,7 +131,7 @@ export default function ProjectPortfolio() {
             {/* Footer */}
             <footer className="py-12 px-8 border-t border-white/5 text-center">
                 <p className="text-text-muted text-xs font-mono uppercase tracking-widest opacity-50">
-                    © 2025 Archive of Shadows // Projects Portfolio
+                    © 2025 The Archive // Projects Portfolio
                 </p>
             </footer>
         </div>

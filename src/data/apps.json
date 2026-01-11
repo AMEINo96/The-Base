@@ -3,7 +3,7 @@
     "id": "2",
     "title": "Skill Match",
     "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "imageUrl": "/The-Base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
     "link": "https://skill-match-website.web.app/",
     "openIn": "new-tab",
     "tags": [
@@ -30,49 +30,69 @@
   {
     "id": "1",
     "title": "Logo Design",
-    "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "description": "5 years of experience in logo design.",
+    "imageUrl": "https://cdn1.designhill.com/uploads/personal_designs/eec4d37ecae11923422c5f5163c0efe1-76b38c77a78cf96d37e94ebdc991341316212492970381.jpeg?ver=2.12.85",
     "link": "/portfolio/project/1",
     "openIn": "new-tab",
     "tags": [
       "Portfolio"
     ],
-    "category": "Graphic Design"
+    "category": "Graphic Design",
+    "images": [
+      "/The-Base/posterex.png",
+      "/The-Base/thumbnailex.png",
+      "/The-Base/bookcoverex.png"
+    ]
   },
   {
     "id": "3",
     "title": "Poster/Ads Design",
-    "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "description": "4 years of experience.",
+    "imageUrl": "https://img.freepik.com/free-psd/shoes-sale-social-media-post-square-banner-template-design_505751-3608.jpg?semt=ais_hybrid&w=740&q=80",
     "link": "/portfolio/project/3",
     "openIn": "new-tab",
     "tags": [
       "Portfolio"
     ],
-    "category": "Graphic Design"
+    "category": "Graphic Design",
+    "images": [
+      "/The-Base/posterex.png",
+      "/The-Base/thumbnailex.png",
+      "/The-Base/bookcoverex.png"
+    ]
   },
   {
     "id": "4",
     "title": "Thumbnail Design",
-    "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "description": "5 years of experience.",
+    "imageUrl": "https://psd.design/wp-content/uploads/2021/10/Creative-YouTube-Thumbnail-Templates-PSD.jpg",
     "link": "/portfolio/project/4",
     "openIn": "new-tab",
     "tags": [
       "Portfolio"
     ],
-    "category": "Graphic Design"
+    "category": "Graphic Design",
+    "images": [
+      "/The-Base/posterex.png",
+      "/The-Base/thumbnailex.png",
+      "/The-Base/bookcoverex.png"
+    ]
   },
   {
     "id": "6",
     "title": "Book Cover Design",
-    "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/the-base/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "description": "2 years of experience.",
+    "imageUrl": "https://cdn.dribbble.com/userupload/13348923/file/original-b3e1f29940c2adbc7889f4e448a2004d.jpg?resize=752x&vertical=center",
     "link": "/portfolio/project/6",
     "openIn": "new-tab",
     "tags": [
       "Portfolio"
     ],
-    "category": "Graphic Design"
+    "category": "Graphic Design",
+    "images": [
+      "/The-Base/posterex.png",
+      "/The-Base/thumbnailex.png",
+      "/The-Base/bookcoverex.png"
+    ]
   }
 ]

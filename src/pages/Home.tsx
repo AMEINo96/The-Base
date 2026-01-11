@@ -55,7 +55,7 @@ function Home() {
                         className="mb-8"
                     >
                         <span className="text-xs font-mono tracking-[0.3em] text-accent uppercase border-b border-accent/30 pb-2">
-                            Classified Dossier
+                            Multiple Services
                         </span>
                     </motion.div>
 
@@ -66,8 +66,7 @@ function Home() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="font-display text-5xl md:text-7xl lg:text-9xl font-bold text-center mb-8 tracking-tight leading-tight"
                     >
-                        THE ARCHIVE<br />
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">OF SHADOWS</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">THE ARCHIVE</span>
                     </motion.h1>
 
                     {/* Tagline */}
