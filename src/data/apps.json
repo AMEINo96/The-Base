@@ -3,7 +3,7 @@
     "id": "2",
     "title": "Skill Match",
     "description": "Connecting students with the perfect teammates for hackathons.",
-    "imageUrl": "/public/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
+    "imageUrl": "/Gemini_Generated_Image_q18n8rq18n8rq18n.png",
     "link": "https://skill-match-website.web.app/",
     "openIn": "new-tab",
     "tags": [
@@ -38,11 +38,7 @@
       "Portfolio"
     ],
     "category": "Graphic Design",
-    "images": [
-      "/The-Base/posterex.png",
-      "/The-Base/thumbnailex.png",
-      "/The-Base/bookcoverex.png"
-    ]
+    "images": []
   },
   {
     "id": "3",
@@ -56,7 +52,7 @@
     ],
     "category": "Graphic Design",
     "images": [
-      "/public/QYU AR Built for the Uncommon Poster.png"
+      "/QYU AR Built for the Uncommon Poster.png"
     ]
   },
   {
@@ -70,11 +66,7 @@
       "Portfolio"
     ],
     "category": "Graphic Design",
-    "images": [
-      "/The-Base/posterex.png",
-      "/The-Base/thumbnailex.png",
-      "/The-Base/bookcoverex.png"
-    ]
+    "images": []
   },
   {
     "id": "6",
@@ -87,10 +79,6 @@
       "Portfolio"
     ],
     "category": "Graphic Design",
-    "images": [
-      "/The-Base/posterex.png",
-      "/The-Base/thumbnailex.png",
-      "/The-Base/bookcoverex.png"
-    ]
+    "images": []
   }
 ]

@@ -13,7 +13,7 @@ export default function ProjectPortfolio() {
             <div className="min-h-screen bg-bg text-text flex flex-col items-center justify-center p-8">
                 <h1 className="text-4xl font-bold mb-4">Project Not Found</h1>
                 <Link to="/" className="text-accent hover:underline flex items-center gap-2">
-                    <ArrowLeft className="w-4 h-4" /> Return to Archive
+                    <ArrowLeft className="w-4 h-4" /> Return to Base
                 </Link>
             </div>
         );
@@ -26,7 +26,7 @@ export default function ProjectPortfolio() {
                 <div className="max-w-7xl mx-auto flex justify-between items-center">
                     <Link to="/" className="flex items-center gap-2 text-text-muted hover:text-white transition-colors group text-sm font-mono uppercase tracking-widest">
                         <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                        Back to Archive
+                        Back to Base
                     </Link>
                     <div className="text-xs font-mono text-accent/50 uppercase tracking-widest leading-none">
                         Project // {project.id.padStart(3, '0')}
@@ -131,7 +131,7 @@ export default function ProjectPortfolio() {
             {/* Footer */}
             <footer className="py-12 px-8 border-t border-white/5 text-center">
                 <p className="text-text-muted text-xs font-mono uppercase tracking-widest opacity-50">
-                    © 2025 The Archive // Projects Portfolio
+                    © 2025 The Base // Projects Portfolio
                 </p>
             </footer>
         </div>

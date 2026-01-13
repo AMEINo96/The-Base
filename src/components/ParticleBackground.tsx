@@ -1,54 +1,69 @@
-import { motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
-
-interface Particle {
-    id: number;
-    x: number;
-    y: number;
-    size: number;
-    duration: number;
-}
+import { useEffect, useRef } from 'react';
 
 export default function ParticleBackground() {
-    const [particles, setParticles] = useState<Particle[]>([]);
+    const canvasRef = useRef<HTMLCanvasElement>(null);
 
     useEffect(() => {
-        const newParticles: Particle[] = [];
-        for (let i = 0; i < 50; i++) {
-            newParticles.push({
-                id: i,
-                x: Math.random() * 100,
-                y: Math.random() * 100,
-                size: Math.random() * 3 + 1,
-                duration: Math.random() * 3 + 2,
+        const canvas = canvasRef.current;
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        if (!ctx) return;
+
+        let animationFrameId: number;
+        let particles: { x: number; y: number; vx: number; vy: number; size: number }[] = [];
+
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+            initParticles();
+        };
+
+        const initParticles = () => {
+            particles = [];
+            const particleCount = 25; // Lightweight count
+            for (let i = 0; i < particleCount; i++) {
+                particles.push({
+                    x: Math.random() * canvas.width,
+                    y: Math.random() * canvas.height,
+                    vx: (Math.random() - 0.5) * 0.5, // Slow, drifting movement
+                    vy: (Math.random() - 0.5) * 0.5,
+                    size: Math.random() * 2 + 1,
+                });
+            }
+        };
+
+        const animate = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'rgba(255, 255, 255, 0.15)'; // Very subtle opacity
+
+            particles.forEach((p) => {
+                p.x += p.vx;
+                p.y += p.vy;
+
+                // Wrap around screen
+                if (p.x < 0) p.x = canvas.width;
+                if (p.x > canvas.width) p.x = 0;
+                if (p.y < 0) p.y = canvas.height;
+                if (p.y > canvas.height) p.y = 0;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fill();
             });
-        }
-        setParticles(newParticles);
+
+            animationFrameId = requestAnimationFrame(animate);
+        };
+
+        window.addEventListener('resize', resize);
+        resize();
+        animate();
+
+        return () => {
+            window.removeEventListener('resize', resize);
+            cancelAnimationFrame(animationFrameId);
+        };
     }, []);
 
-    return (
-        <div className="fixed inset-0 overflow-hidden pointer-events-none">
-            {particles.map((particle) => (
-                <motion.div
-                    key={particle.id}
-                    className="absolute rounded-full bg-white/30"
-                    style={{
-                        left: `${particle.x}%`,
-                        top: `${particle.y}%`,
-                        width: particle.size,
-                        height: particle.size,
-                    }}
-                    animate={{
-                        opacity: [0.2, 0.8, 0.2],
-                        scale: [1, 1.5, 1],
-                    }}
-                    transition={{
-                        duration: particle.duration,
-                        repeat: Infinity,
-                        ease: 'easeInOut',
-                    }}
-                />
-            ))}
-        </div>
-    );
+    return <canvas ref={canvasRef} className="fixed inset-0 pointer-events-none z-0" />;
 }

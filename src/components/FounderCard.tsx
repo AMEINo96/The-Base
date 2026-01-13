@@ -68,11 +68,11 @@ export default function FounderCard({ founder, index }: FounderCardProps) {
 
                     <div className="mt-6 md:hidden">
                         <span className="text-accent text-xs font-mono border border-accent/30 px-3 py-1 rounded-full">
-                            ACCESS DOSSIER
+                            VIEW PROFILE
                         </span>
                     </div>
                 </div>
             </div>
-        </motion.article>
+        </motion.article >
     );
 }

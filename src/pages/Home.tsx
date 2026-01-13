@@ -45,7 +45,7 @@ function Home() {
             {/* Hero Section */}
             <header className="relative min-h-screen flex flex-col items-center justify-center px-8 pt-20 pb-32 overflow-hidden">
                 {/* Vignette */}
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0B0A0F_100%)] pointer-events-none z-10" />
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_0%,#0B0A0F_120%)] pointer-events-none z-10 opacity-70" />
 
                 <div className="relative z-20 text-center">
                     {/* Classified Dossier Label */}
@@ -55,7 +55,7 @@ function Home() {
                         className="mb-8"
                     >
                         <span className="text-xs font-mono tracking-[0.3em] text-accent uppercase border-b border-accent/30 pb-2">
-                            Multiple Services
+                            Digital Innovation
                         </span>
                     </motion.div>
 
@@ -64,9 +64,9 @@ function Home() {
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, ease: "easeOut" }}
-                        className="font-display text-5xl md:text-7xl lg:text-9xl font-bold text-center mb-8 tracking-tight leading-tight"
+                        className="font-display text-4xl md:text-7xl lg:text-9xl font-bold text-center mb-8 tracking-tight leading-tight"
                     >
-                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">THE ARCHIVE</span>
+                        <span className="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">THE BASE</span>
                     </motion.h1>
 
                     {/* Tagline */}
@@ -74,10 +74,10 @@ function Home() {
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
                         transition={{ delay: 0.4 }}
-                        className="text-lg md:text-2xl text-text-muted max-w-2xl mx-auto mb-12 font-light"
+                        className="text-lg md:text-2xl text-text-muted max-w-xl mx-auto mb-12 font-light leading-relaxed"
                     >
-                        Web Development. Graphic Design. AI/ML.<br />
-                        <span className="text-white font-medium">We build the unseen.</span>
+                        Web Development. Graphic Design. AI/ML.
+                        <span className="block mt-2 text-white font-medium">Crafting exceptional web experiences & AI solutions.</span>
                     </motion.p>
 
                     {/* Action Buttons */}
@@ -100,6 +100,8 @@ function Home() {
                             EXPLORE PROJECTS
                         </button>
                     </motion.div>
+
+
                 </div>
 
                 {/* Scroll Indicator */}
@@ -144,7 +146,7 @@ function Home() {
             </section>
 
             {/* Graphic Design Section */}
-            <section ref={projectsRef} className="relative py-24 px-8 bg-panel border-y border-white/5">
+            <section ref={projectsRef} className="relative py-32 px-8 bg-panel border-y border-white/5">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -156,7 +158,7 @@ function Home() {
                         <p className="text-text-muted">Visual identities and creative direction.</p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                         {apps.filter(app => app.category === 'Graphic Design').length > 0 ? (
                             apps.filter(app => app.category === 'Graphic Design').map((app, index) => (
                                 <ProjectCard
@@ -176,7 +178,7 @@ function Home() {
             </section>
 
             {/* Web Development Section */}
-            <section className="relative py-24 px-8 bg-bg">
+            <section className="relative py-32 px-8 bg-bg">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -188,7 +190,7 @@ function Home() {
                         <p className="text-text-muted">Full-stack applications and digital platforms.</p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                         {apps.filter(app => app.category === 'Web Development').length > 0 ? (
                             apps.filter(app => app.category === 'Web Development').map((app, index) => (
                                 <ProjectCard
@@ -208,7 +210,7 @@ function Home() {
             </section>
 
             {/* AI/ML Section */}
-            <section className="relative py-24 px-8 bg-panel border-y border-white/5">
+            <section className="relative py-32 px-8 bg-panel border-y border-white/5">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
@@ -220,7 +222,7 @@ function Home() {
                         <p className="text-text-muted">Intelligent systems and predictive models.</p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-12">
                         {apps.filter(app => app.category === 'AI/ML').length > 0 ? (
                             apps.filter(app => app.category === 'AI/ML').map((app, index) => (
                                 <ProjectCard
@@ -246,8 +248,8 @@ function Home() {
             <footer className="relative py-12 px-8 border-t border-white/5 bg-bg">
                 <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-center md:text-left">
-                        <h3 className="font-display text-xl font-bold mb-1">THE ARCHIVE</h3>
-                        <p className="text-text-muted text-sm">Building in the shadows since 2025.</p>
+                        <h3 className="font-display text-xl font-bold mb-1">THE BASE</h3>
+                        <p className="text-text-muted text-sm">Innovating since 2025.</p>
                     </div>
 
                     <div className="flex gap-6">
@@ -257,7 +259,7 @@ function Home() {
                     </div>
 
                     <p className="text-text-muted text-xs font-mono opacity-50">
-                        © 2025 Archive of Shadows. All assets classified.
+                        © 2025 The Base. All rights reserved.
                     </p>
                 </div>
             </footer>

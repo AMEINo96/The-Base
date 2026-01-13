@@ -1,22 +1,22 @@
 [
         {
                 "id": "founder-1",
-                "name": "KHIZAR",
-                "role": "FOUNDER",
-                "codename": "KHIZAR",
+                "name": "Syed Khizar Abbas",
+                "role": "LEAD DEVELOPER & DESIGNER",
+                "codename": "Khizar Abbas",
                 "philosophy": "Visualizing the unseen, engineering the future.",
                 "description": "Specializing in Graphic Design, Frontend Development, and AI/ML. Crafting intuitive interfaces and intelligent systems.",
-                "imageUrl": "/public/founder1.jpg",
-                "portfolioUrl": "/The-Base/portfolio/cipher/index.html"
+                "imageUrl": "/founder1.jpg",
+                "portfolioUrl": "/portfolio/cipher"
         },
         {
                 "id": "founder-2",
-                "name": "AMEIN",
-                "role": "FOUNDER",
-                "codename": "AMEIN",
+                "name": "Muhammad Amein",
+                "role": "TECHNICAL LEAD & AI ENGINEER",
+                "codename": "Muhammad Amein",
                 "philosophy": "Architecting robust systems, automating the complex.",
                 "description": "Focusing on Backend Architecture, Automation, and AI/ML. Building the scalable engines that power digital innovation.",
-                "imageUrl": "/public/founder2.jpg",
-                "portfolioUrl": "/The-Base/portfolio/archivist/index.html"
+                "imageUrl": "/founder2.png",
+                "portfolioUrl": "/portfolio/archivist"
         }
 ]
